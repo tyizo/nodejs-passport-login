@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='/css/login.css' />
+  <title>Login</title>
+</head>
+<body>
+<% if (messages.error) { %>
+  <%= messages.error %>
+<% } %>
+<form action="/login" method="POST">
+  <h1>Login Now For Free!</h1>
+
+  <div>
+    <label type="name"><span>Name</span></label>
+    <input type="text" name="name" class="question" id="name" required autocomplete="off" />
+  </div>
+  <div>
+    <label type="email"><span>Email</span></label>
+    <input type="email" name="email" class="question" id="email" required autocomplete="off" />
+  </div>
+  <div>
+    <label type="password"><span>Password</span></label>
+    <input type="password" name="password" class="question" id="password" required autocomplete="off" />
+  </div>
+  <button type="submit">Login</button>
+</form>
+
+<span class="hint">Don't have an account ? go to <a href="/register">Register</a> Page</span>
+
+</body>
+</html>

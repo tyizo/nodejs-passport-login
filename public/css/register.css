@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+}
+
+form {
+    padding-top: 20px;
+}
+
+input,
+label {
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  font-size: 28px;
+}
+
+input:focus {
+  outline: 0;
+}
+/* Question */
+
+input.question {
+  border: solid 1px #ccc;
+  font-size: 30px;
+  font-weight: 300;
+  border-radius: 2px;
+  margin: 0;
+  border: none;
+  width: 80%;
+  background: rgba(0, 0, 0, 0);
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden; /* Hack to make "rows" attribute apply in Firefox. */
+}
+
+
+button {
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 15%;
+    box-shadow: 0 0 0 1px #82c8a0 inset,
+    0 0 0 2px rgba(255,255,255,0.15) inset,
+    0 0 0 1px rgba(0,0,0,0.4);
+    background-color: #82c8a0;
+    border:none;
+    outline: none;
+    border-radius: 9px;
+    color: white;
+    cursor: pointer;
+    transition: .4s ease;
+    font-size: 27px;
+    margin: 18px;
+
+}
+
+button:hover {
+    width: 20%;
+    transition: .4s ease;
+    background-color: #92c8a2;
+}
